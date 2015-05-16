@@ -1,10 +1,14 @@
+
+source https://lagunita.stanford.edu/c4x/DB/OLAP/asset/opt-olap.html
+
+``` sql
 /*
 Student( studID, name, major )   // dimension table, studID is key
 Instructor( instID, dept );   // dimension table, instID is key
 Class( classID, univ, region, country );   // dimension table, classID is key
 Took( studID, instID, classID, score );   // fact table, foreign key references to dimension tables
 */
-
+```
 
 1.  Find all students who took a class in California from an instructor not in the student's major department and got a score over 80. Return the student name, university, and score.
 
