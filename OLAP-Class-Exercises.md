@@ -26,7 +26,7 @@ and c.region = 'CA'
 and dept <> major;
 ```
 
-*  __Problem2:__Find average scores grouped by student and instructor for courses taught in Quebec.
+*  __Problem2:__ Find average scores grouped by student and instructor for courses taught in Quebec.
 
 ``` sql
 select t.studid, t.instID, avg(t.score)
